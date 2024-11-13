@@ -7,7 +7,7 @@ from mysql.connector import Error
 from datetime import timedelta
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+mysqlconnector://root:Doit4Pixie&Haribo@localhost/e_commerce_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+mysqlconnector://root:yourpassword@localhost/e_commerce_db'
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
